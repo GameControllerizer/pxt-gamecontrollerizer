@@ -5,7 +5,7 @@
  * https://makecode.microbit.org/blocks/custom
  */
 
-//% weight=100 color=#3FADB5 icon="\uf11b" block="GameControllerizer"
+//% weight=100 color=#F1BC03 icon="\uf11b" block="GameControllerizer"
 namespace gamecontrollerizer {
 
     const EXTERNAL_BUTTON_EVENT_ID: number = 12345;
@@ -338,13 +338,13 @@ namespace gamecontrollerizer {
     export function connectGc(cn: GroveConnector): void {
         switch (cn) {
             case GroveConnector.C1:
-                serial.redirect(SerialPin.P0, SerialPin.P14, BaudRate.BaudRate9600);
+                serial.redirect(SerialPin.P0, SerialPin.P14, BaudRate.BaudRate115200);
                 break;
             case GroveConnector.C2:
-                serial.redirect(SerialPin.P1, SerialPin.P15, BaudRate.BaudRate9600);
+                serial.redirect(SerialPin.P1, SerialPin.P15, BaudRate.BaudRate115200);
                 break;
             case GroveConnector.C3:
-                serial.redirect(SerialPin.P2, SerialPin.P16, BaudRate.BaudRate9600);
+                serial.redirect(SerialPin.P2, SerialPin.P16, BaudRate.BaudRate115200);
                 break;
         }
         // event setting

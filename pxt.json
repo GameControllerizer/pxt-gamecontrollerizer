@@ -1,6 +1,6 @@
 {
     "name": "GameControllerizer",
-    "version": "0.3.0",
+    "version": "0.3.1",
     "description": "A Microsoft MakeCode package for GameControllerizer - beta",
     "license": "MIT",
     "dependencies": {
@@ -14,6 +14,5 @@
     "testFiles": [
         "test.ts"
     ],
-    "public": true,
-    "installedVersion": "workspace:7fb64c6a-df67-4211-46ae-18c9f0075d6d"
+    "public": true
 }

@@ -102,13 +102,13 @@ namespace gamecontrollerizer {
 
     export enum ExButton {
         //% block="B0"
-        EB0 = 0xF0,
+        EB0 = 0x01,
         //% block="B1"
-        EB1 = 0xF1,
+        EB1 = 0x02,
         //% block="B2"
-        EB2 = 0xF2,
+        EB2 = 0x04,
         //% block="B3"
-        EB3 = 0xF3,
+        EB3 = 0x08,
     }
 
     export enum InputConfigTarget {
@@ -348,8 +348,8 @@ namespace gamecontrollerizer {
                 break;
         }
         // event setting
-        serial.onDataReceived('\n', function () {
-            let tMsgId: number = 0xF0 | (serial.readBuffer(2)[0]);
+        serial.onDataReceived(serial.delimiters(Delimiters.NewLine), function () {
+            let tMsgId: number = serial.readBuffer(2)[0];
             control.raiseEvent(EXTERNAL_BUTTON_EVENT_ID, tMsgId);
         })
     }

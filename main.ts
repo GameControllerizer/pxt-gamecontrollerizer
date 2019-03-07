@@ -470,7 +470,7 @@ namespace gamecontrollerizer {
         spos: StickPosition = newStickPosition(0, 0),
         mode: InputMode = InputMode.Hold): void {
         let dur = mode;
-        let tCmd = new StickCmd(stick, spos.x, spos.y, 0);
+        let tCmd = new StickCmd(stick, spos.x, spos.y, dur);
         sendToGc(tCmd);
         return;
     }

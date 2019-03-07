@@ -1,6 +1,6 @@
 {
     "name": "GameControllerizer",
-    "version": "0.3.1",
+    "version": "0.3.2",
     "description": "A Microsoft MakeCode package for GameControllerizer - beta",
     "license": "MIT",
     "dependencies": {

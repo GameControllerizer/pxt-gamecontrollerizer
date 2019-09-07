@@ -287,6 +287,22 @@ namespace gamecontrollerizer {
     }
 
     /**
+     * Cmd:0xCD
+     */
+    export class InterruptCmd extends Cmd {
+        /**
+         */
+        constructor() {
+            super();
+
+            let tBuf: number[] = [0, 0, 0, 0];
+            tBuf[0] = 0xCD;
+
+            this.bytes = tBuf;
+        }
+    }
+
+    /**
      * Cmd:0xCE
      */
     export class InputConfigCmd extends Cmd {
@@ -486,6 +502,15 @@ namespace gamecontrollerizer {
     //% y.min=-127 y.max=127
     export function newStickPosition(x: number = 0, y: number = 0): StickPosition {
         return new StickPosition(x, y);
+    }
+
+    //% blockId="operateInterrupt"
+    //% block="[G.C.] Interrupt command inputs"
+    //% advanced=true
+    export function operateInterrupt(): void {
+        let tCmd = new InterruptCmd();
+        sendToGc(tCmd);
+        return;
     }
 
     //% blockId="operateInputConfig"

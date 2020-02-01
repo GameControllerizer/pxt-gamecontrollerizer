@@ -389,7 +389,7 @@ namespace gamecontrollerizer {
      * @param mode
      */
     //% blockId="operateGamepadDigitally"
-    //% block="[G.C.] %dpad| %button| %mode"
+    //% block="[G.C.] Digital gamepad : Dpad %dpad| Button %button|, then %mode"
     export function operateGamepadDigitally(
         dpad: GamepadDpad = GamepadDpad.Neutral,
         button: GamepadButton = GamepadButton.B0,
@@ -411,7 +411,7 @@ namespace gamecontrollerizer {
      * @param mode
      */
     //% blockId="operateGamepadAnalogly"
-    //% block="[G.C.] %dpad| %button| %stick0| %stick1| %mode"
+    //% block="[G.C.] Analog gamepad : Dpad %dpad| Button %button| Stick0 %stick0| Stick1 %stick1|, then %mode"
     export function operateGamepadAnalogly(
         dpad: GamepadDpad = GamepadDpad.Neutral,
         button: GamepadButton = GamepadButton.B0,
@@ -434,7 +434,7 @@ namespace gamecontrollerizer {
     //////////////////////////////////////////////////////////////////////////////////////////
 
     //% blockId="operateDpad"
-    //% block="[G.C.] Change DPAD to %dpad|, then %mode"
+    //% block="[G.C.] Change Dpad to %dpad|, then %mode"
     //% advanced=true
     export function operateDpad(
         dpad: GamepadDpad = GamepadDpad.Neutral,
@@ -542,7 +542,7 @@ namespace gamecontrollerizer {
      * @param handler code to run
      */
     //% blockId="onExternalButtonPressed"
-    //% block="on %eb |is pressed"
+    //% block="[G.C.] on %eb |is pressed"
     export function onExternalButtonPressed(eb: ExButton = ExButton.EB0, handler: () => void) {
         control.onEvent(EXTERNAL_BUTTON_EVENT_ID, eb, handler);
     }

@@ -91,13 +91,15 @@ namespace gamecontrollerizer {
         y = 1
     }
 
-    export enum GroveConnector {
-        //% block="P0/P14"
-        C1,
-        //% block="P1/P15"
-        C2,
-        //% block="P2/P16"
-        C3
+    export enum ExtConnector {
+        //% block="microbit ring"
+        MB,
+        //% block="Grove P0/P14"
+        GROVE0,
+        //% block="Grove P1/P15"
+        GROVE1,
+        //% block="Grove P2/P16"
+        GROVE2
     }
 
     export enum ExButton {
@@ -350,17 +352,20 @@ namespace gamecontrollerizer {
      * @param port
      */
     //% blockId="connectGc"
-    //% block="[G.C.] Connect G.C. to Grove connector %cn"
-    export function connectGc(cn: GroveConnector): void {
+    //% block="[G.C.] Connect G.C. to %cn"
+    export function connectGc(cn: ExtConnector): void {
         switch (cn) {
-            case GroveConnector.C1:
+            case ExtConnector.GROVE0:
                 serial.redirect(SerialPin.P0, SerialPin.P14, BaudRate.BaudRate115200);
                 break;
-            case GroveConnector.C2:
+            case ExtConnector.GROVE1:
                 serial.redirect(SerialPin.P1, SerialPin.P15, BaudRate.BaudRate115200);
                 break;
-            case GroveConnector.C3:
+            case ExtConnector.GROVE2:
                 serial.redirect(SerialPin.P2, SerialPin.P16, BaudRate.BaudRate115200);
+                break;
+            case ExtConnector.MB:
+                serial.redirect(SerialPin.P0, SerialPin.P1, BaudRate.BaudRate115200);
                 break;
         }
         // event setting

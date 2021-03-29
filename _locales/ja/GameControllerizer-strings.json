@@ -22,7 +22,7 @@
     "gamecontrollerizer.InputConfigTarget.DPAD|block": "十字キー",
     "gamecontrollerizer.InputConfigTarget.LeftStick|block": "左スティック",
     "gamecontrollerizer.InputConfigTarget.RightStick|block": "右スティック",
-    "gamecontrollerizer.connectGc|block": "[G.C.] GCモジュールをGroveコネクタ %cn に接続",
+    "gamecontrollerizer.connectGc|block": "[G.C.] GCモジュールを %cn コネクタに接続",
     "gamecontrollerizer.operateDpad|block": "[G.C.] 十字キーを %dpad |方向に %mode",
     "gamecontrollerizer.operateButtonIndividually|block": "[G.C.] %button |を %mode",
     "gamecontrollerizer.operateStick|block": "[G.C.] %stick |を %spos |方向に %mode",

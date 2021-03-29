@@ -4,7 +4,8 @@
     "description": "A Microsoft MakeCode package for GameControllerizer - beta",
     "license": "MIT",
     "dependencies": {
-        "core": "*"
+        "core": "*",
+        "microphone": "*"
     },
     "files": [
         "README.md",
@@ -15,6 +16,8 @@
         "test.ts"
     ],
     "public": true,
-    "preferredEditor": "tsprj",
-    "installedVersion": "workspace:8d0706e8-4c2c-492c-28c7-2f56207e3cc3"
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj"
 }

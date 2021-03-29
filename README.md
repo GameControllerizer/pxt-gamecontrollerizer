@@ -12,7 +12,7 @@ https://github.com/GameControllerizer/pxt-gamecontrollerizer
 <img src="https://raw.githubusercontent.com/wiki/GameControllerizer/pxt-gamecontrollerizer/images/pxt_installation.png" width="480px">
 
 ## License
-MIT
+Apache License 2.0
 
 ## Supported targets
 * for PXT/microbit

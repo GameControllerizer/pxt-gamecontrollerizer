@@ -2,7 +2,7 @@
 A Microsoft MakeCode package for [GameControllerizer](https://github.com/GameControllerizer/GameControllerizer).
 
 ## Getting started
-**[HERE](https://makecode.microbit.org/_75TYxW1TiPjP)** is the first project.
+**[HERE](https://makecode.microbit.org/_75TYxW1TiPjP)** is the first project.  
 Edit **"[G.C.] Connect G.C. to (XXX)"** according to the G.C. board type.
 
 ## Install

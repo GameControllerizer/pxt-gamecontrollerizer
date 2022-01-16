@@ -395,6 +395,7 @@ namespace gamecontrollerizer {
      */
     //% blockId="operateGamepadDigitally"
     //% block="[G.C.] Digital gamepad : Dpad %dpad| Button %button|, then %mode"
+    //% advanced=true
     export function operateGamepadDigitally(
         dpad: GamepadDpad = GamepadDpad.Neutral,
         button: GamepadButton = GamepadButton.B0,
@@ -417,6 +418,7 @@ namespace gamecontrollerizer {
      */
     //% blockId="operateGamepadAnalogly"
     //% block="[G.C.] Analog gamepad : Dpad %dpad| Button %button| Stick0 %stick0| Stick1 %stick1|, then %mode"
+    //% advanced=true
     export function operateGamepadAnalogly(
         dpad: GamepadDpad = GamepadDpad.Neutral,
         button: GamepadButton = GamepadButton.B0,
@@ -440,7 +442,6 @@ namespace gamecontrollerizer {
 
     //% blockId="operateDpad"
     //% block="[G.C.] Change Dpad to %dpad|, then %mode"
-    //% advanced=true
     export function operateDpad(
         dpad: GamepadDpad = GamepadDpad.Neutral,
         mode: InputMode = InputMode.Hold): void {
@@ -450,20 +451,8 @@ namespace gamecontrollerizer {
         return;
     }
 
-    // blockId="operateButton"
-    // block="[G.C.] Pick %button |, then %mode"
-    // advanced=true
-    export function operateButton(
-        button: GamepadButton = GamepadButton.B0,
-        mode: InputMode = InputMode.Hold): void {
-        let dur = mode;
-        let tCmd = new ButtonCmd([button], dur);
-        sendToGc(tCmd);
-        return;
-    }
     //% blockId="operateButtonIndividually"
-    //% block="[G.C.] Pick %button |, then %mode individually"
-    //% advanced=true
+    //% block="[G.C.] Pick %button |, then %mode"
     export function operateButtonIndividually(
         button: GamepadButton = GamepadButton.B0,
         mode: ButtonInputMode = ButtonInputMode.Hold): void {
@@ -485,7 +474,6 @@ namespace gamecontrollerizer {
 
     //% blockId="operateStick"
     //% block="[G.C.] Change %stick to %spos |,then %mode"
-    //% advanced=true
     export function operateStick(
         stick: GamepadStick = GamepadStick.Left,
         spos: StickPosition = newStickPosition(0, 0),

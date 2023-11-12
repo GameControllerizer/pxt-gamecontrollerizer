@@ -29,8 +29,8 @@
     "gamecontrollerizer.newStickPosition|block": "[G.C.] x %x |y %y",
     "gamecontrollerizer.operateInputConfig|block": "[G.C.] %ctarget |の左右入力を %cmap |に変換する",
     "gamecontrollerizer.operateGamepadDigitally|block": "[G.C.] デジタルゲームパッドの操作 :| 十字キー %dpad | ボタン %button |を %mode",
-    "gamecontrollerizer.operateGamepadAnalogly|block": "[G.C.] アナログゲームパッドの操作 :| 十字キー %dpad | ボタン %button | 左スティック %spos0 | 右スティック %spos1 |を %mode",
+    "gamecontrollerizer.operateGamepadAnalogly|block": "[G.C.] アナログゲームパッドの操作 :| 十字キー %dpad | ボタン %button | 左スティック %stick0 | 右スティック %stick1 |を %mode",
     "gamecontrollerizer.operateInterrupt|block": "[G.C.] コマンド入力を中断する",
     "gamecontrollerizer.operateDuration|block": "[G.C.] %dur| フレーム待つ",
-    "gamecontrollerizer.onExternalButtonPressed|block": "[G.C.] 外部ボタン %id | が押されたら"
+    "gamecontrollerizer.onExternalButtonPressed|block": "[G.C.] 外部ボタン %eb | が押されたら"
 }

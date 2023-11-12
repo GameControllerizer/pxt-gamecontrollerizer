@@ -526,12 +526,11 @@ namespace gamecontrollerizer {
         return;
     }
 
-
     //////////////////////////////////////////////////////////////////////////////////////////
 
     /**
-     * Do something when a external button on G.C. module is pressed
-     * @param id button id
+     * Do something when a external button on G.C.module is pressed
+     * @param eb button id
      * @param handler code to run
      */
     //% blockId="onExternalButtonPressed"
